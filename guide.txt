@@ -1,0 +1,32 @@
+
+- A **higher score** means **more risky** (borrow-heavy, liquidation-prone, low supply).
+- A **lower score** means **less risky** (long-term, consistent lenders).
+
+---
+
+## 🚀 How to Run
+
+1. Install required libraries:
+    ```bash
+    pip install pandas requests tqdm
+    ```
+
+2. Update your Etherscan API key in `risk_scoring.ipynb`:
+    ```python
+    ETHERSCAN_API_KEY = "your_etherscan_api_key_here"
+    ```
+
+3. Run the notebook to generate `wallet_scores.csv`.
+
+---
+
+## 📈 Sample Output
+
+| wallet_id | score |
+|-----------|-------|
+| 0x0039f22efb07a647557c7c5d17854cfd6d489ef3 | 732 |
+| 0x06b51c6882b27cb05e712185531c1f74996dd988 | 621 |
+| ... | ... |
+
+---
+
