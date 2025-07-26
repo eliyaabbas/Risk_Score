@@ -54,3 +54,11 @@ All features are normalized using **Min-Max Scaling**.
 
 We applied a custom weighted formula:
 
+score = (
+0.25 * (1 - norm_supply) +
+0.25 * norm_borrow +
+0.20 * norm_liquidation +
+0.15 * (1 - norm_net_balance) +
+0.15 * (1 - norm_tx_count)
+) * 1000
+
